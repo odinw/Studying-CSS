@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>studyin css</title>
+    </head>
+    <body>
+        
+        <div >
+            <h1>字體</h1>
+            <p style="font-size: 30px;">字體大小 30 像素</p>
+        </div>
+        <br/>
+
+        <div >
+            <h1>其他</h1>
+            <p style="background-color: yellow;">背景顏色，就如同螢光筆</p>
+        </div>
+        <br/>
+
+        <div style="color:blue;">
+            <h1>color : 在 div 加入 style 藍色</h1>
+            <p>將內容的樣式一起改變</p>
+            <p>這邊加入的方式是用名稱</p>
+        </div>
+        <br/>
+
+        <div>
+            <h1>color 4 種表達方式</h1>
+            <p style="color:blue;">名稱 表示</p>
+            <p style="color:#00FFFF;">色碼 表示</p>
+            <p style="color:rgb(255, 0, 0)">rgb 表示</p>
+            <p style="color:hsl(120, 100%, 50%)">hls 表示</p>
+        </div>
+        <br/>
+
+        <div style="color:blue;">
+            <h1>相同設定 以最接近的為主</h1>
+            <p>這 p 本身沒設定 style，所以被外層的 div 影響成藍色</p>
+            <p style="color:red;">這 p 本身有設定顏色，所以為紅色 不被外層影響</p>
+        </div>
+        <br/>
+
+        <div >
+            <h1>邊框</h1>
+            <p>邊框要給 3 個值，分別代表：邊框厚度 / 樣式 / 顏色</p>
+            <p style="border: 2px solid green;">邊框厚度 2 像素 / 實線 / 綠色</p>
+            <p style="border: 2px dashed green;">邊框厚度 2 像素 / 虛線 / 綠色</p>
+            <p style="border: 2px dashed green; width: 200px;">邊框厚度 2 像素 / 虛線 / 綠色，並限制寬度</p>
+            <p style="border: 2px dashed green; width: 200px; height: 100px;">邊框厚度 2 像素 / 虛線 / 綠色，並限制寬度 + 高度</p>
+            <p style="border: 2px dashed green; max-width: 600px;">限制最大寬度，這邊請嘗試調整 browser 框度，來觀察變化</p>
+        </div>
+        <br/>
+
+
+    </body>
+</html>
