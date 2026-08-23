@@ -15,3 +15,4 @@
       - 當畫面寬度 小於 最大寬度, 則寬度會縮放為畫面最大寬度
       - 當畫面寬度 大於 最大寬度, 則寬度為 max-width
     - max-height 自動縮放的最大高度, 邏輯相同
+- [如何撰寫css](https://youtu.be/sDUWDtrvizI?si=vy7aUsZNfgUOL7rC)
