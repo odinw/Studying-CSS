@@ -25,3 +25,13 @@
   - hsl 表示法, ex: hsl(20, 60%, 50%)
 - background-color 背景色, 用法比照 color
 - [color 顏色](https://youtu.be/OjPzTq-NJw0)
+
+# padding & margin
+- 都是用來控制空間
+- margin 控制外部空間
+- padding 控制內部空間
+  - 只管單邊間隔, 就加上 -top, -bottom, -left, -right
+  - 指定數值 單一 px, 表示內部四周都用相同的間隔
+  - 指定數值 四個 px, 表示內部四周分別指定間隔
+  - 指定數值 可以是負數, 用此能重疊到其他物件的空間
+- [padding & margin](https://youtu.be/xmsh58bBSbc)
