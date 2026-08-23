@@ -16,3 +16,12 @@
       - 當畫面寬度 大於 最大寬度, 則寬度為 max-width
     - max-height 自動縮放的最大高度, 邏輯相同
 - [如何撰寫css](https://youtu.be/sDUWDtrvizI?si=vy7aUsZNfgUOL7rC)
+
+# color 顏色
+- color
+  - 字串表示, ex: red
+  - 數字編碼表示法, ex: #AABB55
+  - rgb 表示法, ex: rgb(200, 30, 180)
+  - hsl 表示法, ex: hsl(20, 60%, 50%)
+- background-color 背景色, 用法比照 color
+- [color 顏色](https://youtu.be/OjPzTq-NJw0)
