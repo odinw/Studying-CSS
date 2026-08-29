@@ -35,3 +35,9 @@
   - 指定數值 四個 px, 表示內部四周分別指定間隔
   - 指定數值 可以是負數, 用此能重疊到其他物件的空間
 - [padding & margin](https://youtu.be/xmsh58bBSbc)
+
+# float & display
+- float 讓原本佔位整列的標籤浮起來 (ex: img), 讓後續標籤可靠近, 並列排版, 可用於: 需圖文並茂的時機, 網頁列表與網頁內容並茂的時機
+- display 可調整標籤的空間佔位模式, 把預設佔一整列的改為 用多少佔多少, 也可反之操作
+- [float & display](https://youtu.be/GSVNg5CzVnw)
+

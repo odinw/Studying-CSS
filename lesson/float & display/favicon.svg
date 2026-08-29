@@ -1,0 +1,141 @@
+<svg width="640" height="400" viewBox="0 0 640 400"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="640" height="400" rx="24" fill="#ffffff"/>
+
+  <!-- ================= LEFT: Unformatted SQL ================= -->
+  <rect x="55" y="105" width="220" height="155" rx="14"
+        fill="#172333" stroke="#17395C" stroke-width="7"/>
+
+  <!-- Window bar -->
+  <circle cx="78" cy="125" r="6" fill="#EF4444"/>
+  <circle cx="98" cy="125" r="6" fill="#FBBF24"/>
+  <circle cx="118" cy="125" r="6" fill="#22C55E"/>
+
+  <!-- SQL text -->
+  <g fill="#ffffff"
+     font-family="Consolas, 'Courier New', monospace"
+     font-size="15"
+     font-weight="600">
+    <text x="72" y="158">SELECT * FROM</text>
+    <text x="72" y="181">users u JOIN</text>
+    <text x="72" y="204">orders o ON</text>
+    <text x="72" y="227">u.id=o.user_id</text>
+    <text x="72" y="250">WHERE o.status=1</text>
+  </g>
+
+  <!-- Database -->
+  <g stroke="#12345B" stroke-width="6">
+    <path d="M70 285
+             C70 270 115 262 150 270
+             C185 262 230 270 230 285
+             L230 350
+             C230 365 185 373 150 365
+             C115 373 70 365 70 350 Z"
+          fill="#2495F3"/>
+
+    <ellipse cx="150" cy="285" rx="80" ry="18"
+             fill="#42A5F5"/>
+
+    <path d="M70 307
+             C70 322 115 330 150 322
+             C185 330 230 322 230 307"
+          fill="none"/>
+
+    <path d="M70 329
+             C70 344 115 352 150 344
+             C185 352 230 344 230 329"
+          fill="none"/>
+  </g>
+
+  <!-- ================= ARROW ================= -->
+  <path d="M265 190
+           C300 190 315 190 345 190"
+        fill="none"
+        stroke="#1683EA"
+        stroke-width="18"
+        stroke-linecap="round"/>
+
+  <path d="M330 160 L370 190 L330 220 Z"
+        fill="#1683EA"
+        stroke="#ffffff"
+        stroke-width="7"
+        stroke-linejoin="round"/>
+
+  <!-- ================= MAGIC WAND ================= -->
+  <g transform="rotate(-45 330 115)">
+    <rect x="318" y="55" width="25" height="105"
+          rx="12" fill="#263D55" stroke="#12345B" stroke-width="6"/>
+    <rect x="318" y="55" width="25" height="55"
+          rx="12" fill="#4DB3F2"/>
+    <rect x="318" y="110" width="25" height="12"
+          fill="#ffffff"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#FFC21A" stroke="#12345B" stroke-width="4">
+    <path d="M385 55
+             L392 72 L409 79
+             L392 86 L385 103
+             L378 86 L361 79
+             L378 72 Z"/>
+
+    <path d="M430 100
+             L435 112 L447 117
+             L435 122 L430 134
+             L425 122 L413 117
+             L425 112 Z"/>
+
+    <path d="M335 75
+             L341 89 L355 95
+             L341 101 L335 115
+             L329 101 L315 95
+             L329 89 Z"/>
+  </g>
+
+  <!-- ================= RIGHT: Formatted SQL ================= -->
+  <rect x="365" y="145" width="220" height="170" rx="14"
+        fill="#ffffff" stroke="#17395C" stroke-width="7"/>
+
+  <!-- Window bar -->
+  <circle cx="388" cy="165" r="6" fill="#EF4444"/>
+  <circle cx="408" cy="165" r="6" fill="#FBBF24"/>
+  <circle cx="428" cy="165" r="6" fill="#22C55E"/>
+
+  <!-- Indentation guides -->
+  <g stroke="#D7E4F0" stroke-width="3">
+    <path d="M390 195 V292"/>
+    <path d="M405 218 V292"/>
+  </g>
+
+  <!-- Formatted SQL -->
+  <g font-family="Consolas, 'Courier New', monospace"
+     font-size="16"
+     font-weight="700">
+
+    <text x="405" y="205" fill="#1683EA">SELECT</text>
+    <text x="475" y="205" fill="#172333">*</text>
+
+    <text x="410" y="232" fill="#1683EA">FROM</text>
+    <text x="465" y="232" fill="#172333">users u</text>
+
+    <text x="410" y="259" fill="#1683EA">JOIN</text>
+    <text x="465" y="259" fill="#172333">orders o</text>
+
+    <text x="420" y="286" fill="#1683EA">ON</text>
+    <text x="455" y="286" fill="#172333">u.id=o.user_id</text>
+
+    <text x="410" y="309" fill="#1683EA">WHERE</text>
+  </g>
+
+  <!-- Status condition -->
+  <text x="475" y="309"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="15"
+        font-weight="600"
+        fill="#172333">
+    o.status=1
+  </text>
+
+</svg>
