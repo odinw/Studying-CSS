@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body style="height: 1500px;">
+        <div style="background-color: gold; height: 80px; width: 200px;">1.尚未使用 position, 當頁面滑動到下方 就不可見 </div>
+        <div style="background-color: red; height: 100px; width: 250px;"> </div>
+        <br/>
+        
+        <div style="position: fixed; background-color: gold; height: 80; width: 200px;">2.position fixed, 紅色區塊 上移, 2區塊重疊, 但被黃色區塊覆蓋. 滑動時, 黃色區塊仍保持原位 可見 </div>
+        <div style="background-color: red; height: 100px; width: 250px;"> </div>
+        <br/>
+
+        <div style="position: fixed; right: 10px; background-color: gold; height: 80; width: 200px;">3.position fixed + right. // 可指定 right, left, top, bottom 和 px, 來調整位置 </div>
+        <br/>
+
+        <div style="position: relative; top: 20px; background-color: gold; height: 80; width: 200px;">4.position relative top 20, 以當前位置為原點 再偏移, 往下移 20 px 稍微壓住紅區</div>
+        <div style="background-color: red; height: 100px; width: 250px;"> </div>
+        <br/>
+
+        <div style="padding: 30px; border: 5px solid red;">
+            <div style="padding: 30px; border: 5px solid red;">
+                <div style="width: 200px; height: 40px; background-color: gold;">
+                    5.尚未設 position
+                </div>
+            </div>
+        </div>
+        <br/>
+
+        <div style="padding: 30px; border: 5px solid red;">
+            <div style="padding: 30px; border: 5px solid red;">
+                <div style="position: absolute; width: 200px; height: 40px; background-color: gold;">
+                    6.position absolute, 外層 div 邊框 內縮 搶佔位置, 但滑動網頁 黃區 不會跟著動
+                </div>
+            </div>
+        </div>
+        <br/>
+
+        <div style="padding: 30px; border: 5px solid red;">
+            <div style="padding: 30px; border: 5px solid red;">
+                <div style="position: absolute; top: 0px; right: 200px; width: 200px; height: 40px; background-color: gold;">
+                    7.position absolute, 跟 2. fix 很像, 但滑動網頁 黃區 不會跟著動
+                </div>
+            </div>
+        </div>
+        <br/>
+
+        <div style="padding: 30px; border: 5px solid red;">
+            <div style="position: relative; padding: 30px; border: 5px solid red;">
+                <div style="position: absolute; top: 0px; right: 200px; width: 200px; height: 40px; background-color: gold;">
+                    8.position互包, 外層 relative, 內層 absolute, 則以外層為原點 再偏移
+                </div>
+            </div>
+        </div>
+        <br/>        
+
+        <div style="position: relative; padding: 30px; border: 5px solid red;">
+            <div style="position: relative; padding: 30px; border: 5px solid red;">
+                <div style="position: absolute; top: 0px; right: 200px; width: 200px; height: 40px; background-color: gold;">
+                    9.position 三層互包,  內層 absolute 只跟隨最近的外層 relative 為原點 再偏移
+                </div>
+            </div>
+        </div>
+
+        <br/>        
+        <div style="position: relative; padding: 30px; border: 5px solid red;">
+            <div style="position: relative; padding: 30px; border: 5px solid red;">
+                <div style="position: fixed; top: 0px; right: 400px; width: 200px; height: 40px; background-color: gold;">
+                    10.position 三層互包,  內層 fixed 不理會外層
+                </div>
+            </div>
+        </div>
+        <br/>               
+    </body>
+</html>

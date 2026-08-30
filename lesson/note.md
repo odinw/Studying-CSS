@@ -41,3 +41,9 @@
 - display 可調整標籤的空間佔位模式, 把預設佔一整列的改為 用多少佔多少, 也可反之操作
 - [float & display](https://youtu.be/GSVNg5CzVnw)
 
+# [position 定位](https://youtu.be/k4s6ynrkw6A)
+- fixed 固定
+  - 已整個畫面為視角的左上為原點 在定位?
+- relative 相對定位
+  - 已當前位置為原點, 再做偏移
+- absolute 絕對定位
