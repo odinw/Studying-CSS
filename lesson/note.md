@@ -72,3 +72,13 @@
   - link
     - rel 說明檔案類型
     - href 檔案路徑
+
+# [class & id](https://youtu.be/bgiPH9GXmJ4)
+- 是用來對 標籤 進行分類(class) 或 唯一標記(id), 以利精準的套用 css 可以風格對象
+- id 則是具有唯一性的標記, 在單份 .html 不會出現使用相同 id 的標籤。
+- class 適合有相同狀況的群組類型標籤, 因此相同 class 可套用到多個標籤上
+- 同個 標籤 可以放上多個 class
+所以適合用在單獨類型的對象
+- 如何在 .css 中標記
+  - .{class_name} 為 class
+  - #{id_name} 為 id
