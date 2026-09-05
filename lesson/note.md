@@ -60,3 +60,15 @@
   CSS 的寫法
   1. 直接寫在 tag 中, 就如同之前的範例
   2. 把 css 從 標籤中抽離到 head 的 style, 就能大範圍套用 (本次作法)
+
+  # [引入外部css檔案](https://youtu.be/AlqMknuXSFc)
+  - 獨立建立 .css
+  - 再到 .html head 區塊, 用 link 標籤將 .css 引入
+  - 依此方式, 
+  - 優點
+   - 責任分離：獨立 .css，讓腳本責任明確，css 負責風格、html 負責排版
+   - 重用性：同份 .css 就能給多個 html 使用, 不用重複寫
+   - 一致性：修改也能一起改, 適合規格上必定相同風格
+  - link
+    - rel 說明檔案類型
+    - href 檔案路徑
