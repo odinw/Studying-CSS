@@ -1,0 +1,40 @@
+/* html 單一標籤 */
+h1, h2 {
+    background-color: grey;
+}
+
+/* html 巢狀標籤 */
+dl dd {
+    color: blue;
+}
+
+/* class */
+.food {
+    color: red;
+}
+.anime {
+    color: blue;
+}
+.boss {
+    background-color: gold;
+}
+
+/* id */
+#log-horizon{
+    border: 5px solid;
+}
+
+/* 全套用 */
+* {
+    color: red;
+}
+
+/* 屬性 */
+[type] {
+    background-color: blueviolet ;
+}
+
+/* 行為 */
+h3:hover {
+    background-color: blueviolet ;
+}

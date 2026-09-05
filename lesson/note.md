@@ -82,3 +82,24 @@
 - 如何在 .css 中標記
   - .{class_name} 為 class
   - #{id_name} 為 id
+
+# [selector](https://youtu.be/tvQEdXx-_cY)
+css selector 有許多指定方式
+- html
+  - tag 單一標籤, ex: p, input
+  - nested tags 巢狀標籤, 第一個標籤為目標容器, 第二標籤為容器底下的目標
+    - ex: dl dd, 目標是 dl 結構下的 dd。所以 若 dl 底下有 dt 則不受影響
+  - : 以冒號指定行為
+    - ex: h3:hover
+- 自訂
+  - class: .{class_name} 點號開頭
+  - id: #{id}
+- 多重混用
+  - ex: #id-1 .class-1 {...}
+- * 單個米字號 表示全套用, 但似乎順序性較低? 實測若有其他樣式指定了同屬性 則以其他樣式優先
+- 針對屬性 [], 此為跨越標籤的設定, 只要有標籤帶有此屬性 就會套用
+  - ex: type
+- 行為
+  - {其他selector指定模式} 加上冒號 : 加上 {行為}
+  - ex: h3:hover, 此為 {tag}:{行為}
+- ※ 這裡只展示常用的，但還有很多方式可查看 W3C 
